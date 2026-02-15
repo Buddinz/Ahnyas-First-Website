@@ -178,13 +178,22 @@ function initPastaPage() {
   const pastaMood = document.getElementById('pasta-mood');
   
   if (pastaBtn && pastaMood) {
-    pastaBtn.addEventListener('click', () => {
+    pastaBtn.addEventListener('click', (e) => {
+      e.preventDefault();
       const randomMood = moods[Math.floor(Math.random() * moods.length)];
       pastaMood.textContent = randomMood;
+      pastaMood.setAttribute('aria-atomic', 'true');
       localStorage.setItem(PASTA_MOOD_KEY, randomMood);
+      
+      // Feedback animation
+      const originalText = pastaBtn.textContent;
+      pastaBtn.textContent = '✨ Mood revealed!';
+      setTimeout(() => {
+        pastaBtn.textContent = originalText;
+      }, 1200);
     });
     
-    // Load saved mood
+    // Load saved mood on page load
     const savedMood = localStorage.getItem(PASTA_MOOD_KEY);
     if (savedMood) {
       pastaMood.textContent = savedMood;
