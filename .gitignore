@@ -1,0 +1,15 @@
+# Git and DS_Store
+.git/
+.DS_Store
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.directory

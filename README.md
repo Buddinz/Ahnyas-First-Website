@@ -66,6 +66,107 @@ Then visit `http://localhost:8000` in your browser.
 
 ---
 
+## 🐙 GitHub Setup & Sharing
+
+### Push to GitHub (First Time)
+
+1. **Create a new repository on GitHub:**
+   - Go to [github.com/new](https://github.com/new)
+   - Repository name: `ahnya-first-website` (or your choice)
+   - Description: "Multi-page tablet-first Pasta Palace Crew website"
+   - Public (so it can be shared)
+   - **Don't** initialize with README (we already have one)
+   - Click "Create repository"
+
+2. **Push your local repo to GitHub:**
+   ```bash
+   cd /Users/ahmadrichardson/Desktop/ahnya-first-website
+   
+   # Add GitHub remote (replace YOUR_USERNAME with your GitHub username)
+   git remote add origin https://github.com/YOUR_USERNAME/ahnya-first-website.git
+   
+   # Rename branch to main (if not already)
+   git branch -M main
+   
+   # Push to GitHub
+   git push -u origin main
+   ```
+
+3. **Share the GitHub URL:**
+   - Your repo will be at: `https://github.com/YOUR_USERNAME/ahnya-first-website`
+   - Share this link with anyone!
+
+### Making Updates & Committing Changes
+
+After you edit files locally:
+
+```bash
+# See what changed
+git status
+
+# Stage all changes
+git add .
+
+# Commit with a message
+git commit -m "Updated drills and added new pasta moods"
+
+# Push to GitHub
+git push origin main
+```
+
+### Common Workflow
+
+```bash
+# 1. Make changes to HTML/CSS/JS files
+# (edit files in VS Code or text editor)
+
+# 2. Check status
+git status
+
+# 3. Stage everything
+git add .
+
+# 4. Commit with meaningful message
+git commit -m "Add new swimming drills and fix timer bug"
+
+# 5. Push to GitHub
+git push
+
+# ✅ Changes are now live on GitHub!
+```
+
+### View Live Version on GitHub Pages (Optional)
+
+To make your site automatically viewable online:
+
+1. Go to your GitHub repo settings
+2. Scroll to "GitHub Pages" section
+3. Select "Deploy from a branch"
+4. Branch: `main` / folder: `/ (root)`
+5. Click Save
+6. Your site will be live at: `https://YOUR_USERNAME.github.io/ahnya-first-website`
+
+### Clone on Another Computer
+
+To get the project on a different computer:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ahnya-first-website.git
+cd ahnya-first-website
+```
+
+---
+
+## 🔗 Sharing Tips
+
+**Share via:**
+- 📱 Text/Email: `https://github.com/YOUR_USERNAME/ahnya-first-website`
+- 📌 GitHub Pages: `https://YOUR_USERNAME.github.io/ahnya-first-website` (if enabled)
+- 💾 Download ZIP: Click "Code" → "Download ZIP" on GitHub
+- 👥 Collaborate: Add collaborators in repo Settings → Collaborators
+
+---
+
 ## 🎨 Design & Theme
 
 **Color Palette:**
