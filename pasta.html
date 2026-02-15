@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pasta Palace Crew – Pasta Palace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="pasta">
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <div class="logo">🏴‍☠️⚓️</div>
+      <h1>Pasta Palace Crew</h1>
+      <p class="tagline">Kind adventures, practice, and pasta!</p>
+    </div>
+    <nav aria-label="Main" class="main-nav">
+      <a href="index.html" class="nav-btn" data-page="home">Home</a>
+      <a href="sports.html" class="nav-btn" data-page="sports">Sports</a>
+      <a href="pasta.html" class="nav-btn" data-page="pasta">Pasta Palace</a>
+      <a href="chill.html" class="nav-btn" data-page="chill">Chill Zone</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h2>🍝 Pasta Palace 🍝</h2>
+      <p class="lead">Welcome to the most delicious corner of our crew! Explore pasta fun facts, check today's pasta mood, and collect pasta points!</p>
+    </section>
+
+    <div class="card-section">
+      <article class="card">
+        <h3>Pasta Fun Facts! 📚</h3>
+        <ul>
+          <li><strong>Ancient History:</strong> Pasta has been eaten for thousands of years in different forms.</li>
+          <li><strong>Shapes:</strong> There are over 350 different pasta shapes! Each one holds sauce differently.</li>
+          <li><strong>Energy Boost:</strong> Pasta gives you carbs for energy to play and learn.</li>
+          <li><strong>Global Love:</strong> Pasta is loved in kitchens all around the world.</li>
+          <li><strong>Fun Fact:</strong> A strand of spaghetti is called a "noodle" or "strand" — and it's the longest pasta!</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>🎯 Today's Pasta Mood</h3>
+        <p>Click the button to discover today's pasta vibe!</p>
+        <button id="pasta-btn" class="big-btn">Reveal Pasta Mood! 🎲</button>
+        <div id="pasta-mood" class="mood-reveal" aria-live="polite" aria-atomic="true">
+          Press the button to see today's mood!
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>🏅 Pasta Points Counter</h3>
+        <p>Track your pasta love and earn tiny badges!</p>
+        <div class="points-tracker">
+          <p>Your Pasta Points: <span id="pasta-points" aria-live="polite" aria-atomic="true">0</span></p>
+          <div class="pasta-badges" aria-live="polite">
+            <p class="badge-hint">Reach 5, 10, and 20 points to unlock badges!</p>
+          </div>
+        </div>
+        <div class="points-buttons">
+          <button id="add-pasta-point" class="big-btn">Add 1 Point (+)</button>
+          <button id="reset-pasta-points" class="big-btn secondary">Reset Points</button>
+        </div>
+      </article>
+    </div>
+
+    <section class="palace-visual">
+      <div class="palace-emoji">🏰</div>
+      <p>The Pasta Palace welcomes hungry adventurers!</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>Be kind. Stay safe online. Have fun! 💙</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

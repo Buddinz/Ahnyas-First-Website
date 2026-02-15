@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pasta Palace Crew – Chill Zone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="chill">
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <div class="logo">🏴‍☠️⚓️</div>
+      <h1>Pasta Palace Crew</h1>
+      <p class="tagline">Kind adventures, practice, and pasta!</p>
+    </div>
+    <nav aria-label="Main" class="main-nav">
+      <a href="index.html" class="nav-btn" data-page="home">Home</a>
+      <a href="sports.html" class="nav-btn" data-page="sports">Sports</a>
+      <a href="pasta.html" class="nav-btn" data-page="pasta">Pasta Palace</a>
+      <a href="chill.html" class="nav-btn" data-page="chill">Chill Zone</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h2>🌙 Chill Zone 🌙</h2>
+      <p class="lead">Time to relax and wind down. Use the breathing timer or check off your sleep routine!</p>
+    </section>
+
+    <div class="card-section">
+      <article class="card breathing-card">
+        <h3>60-Second Breathing Timer ✨</h3>
+        <p>Take slow, deep breaths. This timer will guide you for 60 seconds.</p>
+        
+        <div class="timer-container">
+          <div class="breath-visual" id="breath-visual"></div>
+          <div class="timer-display">
+            <div id="countdown" aria-live="polite" aria-atomic="true">00:60</div>
+            <p id="breath-status" aria-live="polite" aria-atomic="true" class="breath-status">Ready?</p>
+          </div>
+        </div>
+
+        <div class="timer-buttons">
+          <button id="start-timer" class="big-btn">Start Breathing</button>
+          <button id="pause-timer" class="big-btn secondary" disabled>Pause</button>
+          <button id="reset-timer" class="big-btn secondary">Reset</button>
+        </div>
+
+        <div class="breathing-tips">
+          <p><strong>Tip:</strong> Breathe in slowly through your nose for 4 counts, hold for 4, then breathe out through your mouth for 4. Feel calm and peaceful! 💙</p>
+        </div>
+      </article>
+
+      <article class="card checklist-card">
+        <h3>🛏️ Sleep Routine Checklist</h3>
+        <p>Check off these tasks to prep for a great night's sleep! Your progress is saved.</p>
+        
+        <div class="checklist">
+          <div class="checklist-item">
+            <input type="checkbox" id="check-water" class="checklist-input" data-key="water">
+            <label for="check-water">Drink a glass of water</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check-wash" class="checklist-input" data-key="wash">
+            <label for="check-wash">Wash hands and face</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check-brush" class="checklist-input" data-key="brush">
+            <label for="check-brush">Brush teeth</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check-quiet" class="checklist-input" data-key="quiet">
+            <label for="check-quiet">Find a quiet, cozy spot</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check-dim" class="checklist-input" data-key="dim">
+            <label for="check-dim">Dim the lights</label>
+          </div>
+          <div class="checklist-item">
+            <input type="checkbox" id="check-book" class="checklist-input" data-key="book">
+            <label for="check-book">Read or listen to a story</label>
+          </div>
+        </div>
+
+        <button id="reset-checklist" class="big-btn secondary">Clear Checklist</button>
+      </article>
+    </div>
+
+    <section class="stars-visual">
+      <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+      <p>Sweet dreams, crew! 🌛</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>Be kind. Stay safe online. Have fun! 💙</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

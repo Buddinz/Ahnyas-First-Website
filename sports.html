@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pasta Palace Crew – Sports</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="sports">
+  <header class="site-header" role="banner">
+    <div class="brand">
+      <div class="logo">🏴‍☠️⚓️</div>
+      <h1>Pasta Palace Crew</h1>
+      <p class="tagline">Kind adventures, practice, and pasta!</p>
+    </div>
+    <nav aria-label="Main" class="main-nav">
+      <a href="index.html" class="nav-btn" data-page="home">Home</a>
+      <a href="sports.html" class="nav-btn" data-page="sports">Sports</a>
+      <a href="pasta.html" class="nav-btn" data-page="pasta">Pasta Palace</a>
+      <a href="chill.html" class="nav-btn" data-page="chill">Chill Zone</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h2>Sports Tips & Mini-Drills 🏋️</h2>
+      <p class="lead">Learn beginner tips and try new drills for each sport. Click "Try this!" to get a random drill!</p>
+    </section>
+
+    <div class="card-section">
+      <article class="sport-card" data-sport="volleyball">
+        <h3>Volleyball 🏐</h3>
+        
+        <div class="card-subsection">
+          <h4>Beginner Tips:</h4>
+          <ul>
+            <li>Keep your eyes on the ball at all times.</li>
+            <li>Use soft hands for bumps to control the ball.</li>
+            <li>Move your feet toward the ball for better accuracy.</li>
+          </ul>
+        </div>
+
+        <div class="card-subsection">
+          <h4>Drills to Try:</h4>
+          <ol>
+            <li>3-pass wall rally (10 reps)</li>
+            <li>Underhand serve practice (5 safe serves)</li>
+          </ol>
+        </div>
+
+        <button class="try-btn" data-sport="volleyball">Try this! →</button>
+        <div class="drill-reveal" aria-live="polite" role="status" aria-hidden="true"></div>
+      </article>
+
+      <article class="sport-card" data-sport="basketball">
+        <h3>Basketball 🏀</h3>
+        
+        <div class="card-subsection">
+          <h4>Beginner Tips:</h4>
+          <ul>
+            <li>Bend your knees when you dribble for better control.</li>
+            <li>Keep your head up to see the court.</li>
+            <li>Practice soft layups close to the hoop first.</li>
+          </ul>
+        </div>
+
+        <div class="card-subsection">
+          <h4>Drills to Try:</h4>
+          <ol>
+            <li>Figure-8 dribbling around cones (30 seconds)</li>
+            <li>Spot shots from 3 different spots (5 shots each)</li>
+          </ol>
+        </div>
+
+        <button class="try-btn" data-sport="basketball">Try this! →</button>
+        <div class="drill-reveal" aria-live="polite" role="status" aria-hidden="true"></div>
+      </article>
+
+      <article class="sport-card" data-sport="swimming">
+        <h3>Swimming 🏊‍♀️</h3>
+        
+        <div class="card-subsection">
+          <h4>Beginner Tips:</h4>
+          <ul>
+            <li>Breathe steadily and relax to stay calm in the water.</li>
+            <li>Kick from your hips, not just your feet.</li>
+            <li>Keep a straight body line to reduce drag.</li>
+          </ul>
+        </div>
+
+        <div class="card-subsection">
+          <h4>Drills to Try:</h4>
+          <ol>
+            <li>Kickboard kicks down the pool (2 minutes)</li>
+            <li>Floating practice to build confidence (30 seconds)</li>
+          </ol>
+        </div>
+
+        <button class="try-btn" data-sport="swimming">Try this! →</button>
+        <div class="drill-reveal" aria-live="polite" role="status" aria-hidden="true"></div>
+      </article>
+    </div>
+
+    <section class="practice-tracker">
+      <h3>Mark Your Practice! 💪</h3>
+      <p>Click below each time you practice a sport to earn badges!</p>
+      <button id="practice-btn" class="big-btn">I Practiced Today!</button>
+      <div class="tracker-info">
+        <p>Practices: <span id="practice-count-sports" aria-live="polite" aria-atomic="true">0</span></p>
+        <div class="badge-area" aria-live="polite">No badges yet — keep going!</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>Be kind. Stay safe online. Have fun! 💙</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
