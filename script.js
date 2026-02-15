@@ -400,35 +400,6 @@ function initChillPage() {
   loadChecklistState();
 }
 
-
-  // 60s breathing timer
-  const startBtn = document.getElementById('start-timer');
-  const stopBtn = document.getElementById('stop-timer');
-  const countdownEl = document.getElementById('countdown');
-  let timer = null; let timeLeft = 60;
-
-  function updateCountdown(){ countdownEl.textContent = String(timeLeft); }
-
-  startBtn.addEventListener('click', ()=>{
-    if(timer) return; // already running
-    timeLeft = 60; updateCountdown();
-    // start breathing visual
-    const breath = document.getElementById('breath-visual');
-    if(breath) breath.classList.add('breathing');
-    timer = setInterval(()=>{
-      timeLeft -= 1; updateCountdown();
-      if(timeLeft<=0){ clearInterval(timer); timer=null; countdownEl.textContent='Done!'; setTimeout(()=>{countdownEl.textContent='60'},1500)}
-    },1000);
-  });
-  stopBtn.addEventListener('click', ()=>{ if(timer){clearInterval(timer); timer=null; countdownEl.textContent='Stopped'}});
-
-  // Stop breathing visual when timer stops or ends
-  const originalStop = stopBtn.onclick;
-  const stopBreathing = ()=>{ const breath = document.getElementById('breath-visual'); if(breath){breath.classList.remove('breathing')} };
-  stopBtn.addEventListener('click', ()=> stopBreathing());
-  // ensure breathing stops when countdown finishes
-  const originalIntervalWrapper = setInterval; // noop placeholder
-
   // Keyboard support: allow number keys 1-4 to jump to panels
   document.addEventListener('keydown', (e)=>{
     if(e.key>='1' && e.key<='4'){
