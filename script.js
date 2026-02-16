@@ -404,7 +404,8 @@ function initChillPage() {
   document.addEventListener('keydown', (e)=>{
     if(e.key>='1' && e.key<='4'){
       const idx = Number(e.key)-1;
+      const navButtons = document.querySelectorAll('.nav-btn');
       if(navButtons[idx]) navButtons[idx].click();
     }
   });
-});
+ 
